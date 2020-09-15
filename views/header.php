@@ -2,7 +2,7 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" >
-		<title>Site des Bonnes Nouvelles on Azure!</title>
+		<title>Un site de Bonnes Nouvelles</title>
 		<link rel="stylesheet" type="text/css" href="views/css/base.css" media="all" >
 		<link rel="stylesheet" type="text/css" href="views/css/modele01.css" media="screen" >
 	</head>
@@ -13,7 +13,7 @@
 				<a href="index.php">
 				<img src="views/images/smiley.jpg" alt="Sourire">
 				</a>
-				Un site de Bonnes Nouvelles
+				 Site des Bonnes Nouvelles on Azure
 			</h1>
 			<p class="sous-titre">
 				<strong>Institut Paul Lambin</strong>
