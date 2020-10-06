@@ -23,7 +23,7 @@
 	$action = (isset($_GET['action'])) ? htmlentities($_GET['action']) : 'default';
 	# Quelle action est demandée ?
 
-function callGenesisController() : GenesisController
+function callGenesisController(): GenesisController
 {
     require_once('controllers/GeneseController.php');
     $controller = new GeneseController();
@@ -41,7 +41,11 @@ switch($action) {
 		case 'contact':
 			require_once('controllers/ContactController.php');	
 			$controller = new ContactController();
-			break;	
+			break;
+        case 'help':
+            require_once ('controllers/HelpController.php');
+            $controller = new HelpController();
+            break;
 		default: # Par défaut, le contrôleur de l'accueil est sélectionné
 			require_once('controllers/AccueilController.php');	
 			$controller = new AccueilController();
@@ -52,5 +56,4 @@ switch($action) {
 	
 	# Ecrire ici le footer du site de toutes pages HTML
 	require_once(CHEMIN_VUES . 'footer.php');
-
 ?>
